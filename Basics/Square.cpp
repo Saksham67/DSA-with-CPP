@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<bits/stdc++.h>     //finiding square root of a given number.
 using namespace std;
 int FindSquareroot(int x)
 {
