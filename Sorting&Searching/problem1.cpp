@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>     //sorting an array
+#include<bits/stdc++.h>     //Linear Search
 using namespace std;
 int main()
 {
@@ -9,7 +9,7 @@ int main()
     for(int i=0; i<n; i++){
         cin>>arr[i];
     }
-    int sortedArr[n];
+    
 
 
 
