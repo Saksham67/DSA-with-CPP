@@ -19,9 +19,9 @@ void Pattern(int num)
 }
 int main()
 {
-    int num;
+    int n;
     cout << "Enter a number: " << endl;
-    cin >> num;
-    Pattern(num);
+    cin >> n;
+    Pattern(n);
     return 0;
 }
