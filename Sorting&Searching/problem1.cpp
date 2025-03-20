@@ -16,12 +16,12 @@ int FindElement(int num)
         {
             cout<<"Element Found at index: "<<i;
         }
+        else cout<<"Element Not found"<<endl;
     }
 
 }
 int main()
 {   
-
     int num;
     cout<<"Enter a Number, you want to find: "<<endl;
     cin>>num;
