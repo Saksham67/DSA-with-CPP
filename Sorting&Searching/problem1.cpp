@@ -10,6 +10,7 @@ int main()
         cin>>arr[i];
     }
     
+    
 
 
 
