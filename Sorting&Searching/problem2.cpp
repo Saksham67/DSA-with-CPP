@@ -12,6 +12,11 @@ int main()
         cin>>arr[i];
       }
 
+      L = arr[0];
+      H = arr[n-1];
+      mid = (L+H)/2;
+      
+
       
 
 }
