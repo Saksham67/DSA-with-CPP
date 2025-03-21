@@ -15,6 +15,7 @@ int FindElement(int num)
         if(num == arr[i])
         {
             cout<<"Element Found at index: "<<i;
+            break;
         }
     }
     
