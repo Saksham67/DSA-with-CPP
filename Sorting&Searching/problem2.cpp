@@ -18,12 +18,14 @@ int main()
     L = 0;
     H = num - 1;
     mid = (L + H) / 2;
+    bool found = false;
 
     while (L <= H)
     {
         if (arr[mid] == target)
         {
             cout << "element found out at Index : " << mid;
+            found = true;
             break;
         }
         if (arr[mid] < target)
@@ -34,5 +36,6 @@ int main()
             H = mid - 1;
         mid = (L+H)/2;
     }
-    return -1;
+    if(!found) cout<<"Element not found";
+    return 0;
 }
