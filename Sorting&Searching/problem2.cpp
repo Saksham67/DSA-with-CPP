@@ -21,10 +21,14 @@ int main()
         if (arr[mid] == num)
         {
             cout << "element found out at Index : " << mid;
+            break;
         }
-        if(arr[mid] < num) L = mid + 1;
-
-        if(arr[mid] > num) H = mid - 1;
+        if(arr[mid] < num)
+        {
+            L = mid + 1;
+        } 
+        else H = mid - 1;
         
     }
+    return -1;
 }
