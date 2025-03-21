@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int num, mid, L, H;
+    int num, mid, L, H, target ;
     cout << "Enter size of array: " << endl;
     cin >> num;
     int arr[num];
@@ -11,6 +11,9 @@ int main()
     {
         cin >> arr[i];
     }
+    cout<<"Enter target value to find: "<<endl;
+    cin>>target;
+
 
     L = 0;
     H = num - 1;
@@ -18,17 +21,18 @@ int main()
 
     while (L <= H)
     {
-        if (arr[mid] == num)
+        if (arr[mid] == target)
         {
             cout << "element found out at Index : " << mid;
             break;
         }
-        if(arr[mid] < num)
+        if (arr[mid] < target)
         {
             L = mid + 1;
-        } 
-        else H = mid - 1;
-        
+        }
+        else
+            H = mid - 1;
+        mid = (L+H)/2;
     }
     return -1;
 }
