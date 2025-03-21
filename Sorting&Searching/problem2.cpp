@@ -15,6 +15,11 @@ int main()
       L = arr[0];
       H = arr[n-1];
       mid = (L+H)/2;
+
+      for(int i = 0; i<n; i++)
+      {
+        if(arr[mid]== n) cout<<"Found At: "<<arr[i];
+      }
       
 
       
