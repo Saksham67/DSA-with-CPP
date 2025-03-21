@@ -19,7 +19,12 @@ int main()
     while (L <= H)
     {
         if (arr[mid] == num)
-            cout << "found out at: " << mid;
+        {
+            cout << "element found out at Index : " << mid;
+        }
+        if(arr[mid] < num) L = mid + 1;
+
+        if(arr[mid] > num) H = mid - 1;
         
     }
 }
