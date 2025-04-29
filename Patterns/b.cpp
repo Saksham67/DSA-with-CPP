@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>         //i think it's knows as half pyramid pattern
+#include<bits/stdc++.h>         //i think it's known as half pyramid pattern
 using namespace std;
 int main()
 {
