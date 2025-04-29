@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>         //number pattern
+#include<bits/stdc++.h>         //number pattern like 1, 1 2, 1 2 3,....
 using namespace std;
 int main()
 {
