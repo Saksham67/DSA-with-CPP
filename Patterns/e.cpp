@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>             //reverse half pyramid pattern
+#include<bits/stdc++.h>             //reverse right angle triangle.
 using namespace std;
 int main()
 {
