@@ -29,4 +29,13 @@ int main()
             multi[i][j] = arr1[i][j] * arr2[i][j];
         }
     }
+    cout << "Result of multiplication (3x3 matrix):" << endl;
+    for (i = 0; i < 3; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            cout << multi[i][j] << " ";
+        }
+        cout << endl;
+    }
 }
