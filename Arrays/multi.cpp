@@ -15,9 +15,9 @@ int main()
 
     cout << "Taking input for arr2:" << endl;
 
-    for (i = 0; i < 3; i++)
+    for (i = 0; i < 2; i++)
     {
-        for (j = 0; j < 2; j++)
+        for (j = 0; j < 3; j++)
         {
             cin >> arr2[i][j];
         }
