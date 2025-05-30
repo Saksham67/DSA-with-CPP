@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int n = 5;
+    int n = 7;
     int arr1[n], arr2[n], i;
 
     cout << "Enter elements for arr1: " << endl;
