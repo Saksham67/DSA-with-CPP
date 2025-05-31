@@ -13,7 +13,7 @@ int main()
         }
     }
 
-    cout << "Taking input for arr2:" << endl;
+    cout << "input for arr2:" << endl;
 
     for (i = 0; i < 2; i++)
     {
