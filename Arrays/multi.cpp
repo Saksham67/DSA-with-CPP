@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <bits/stdc++.h>    //multiplication of two matrix.
 using namespace std;
 int main()
 {
