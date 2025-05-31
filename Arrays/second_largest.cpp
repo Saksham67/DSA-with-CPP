@@ -15,9 +15,9 @@ int main()
     for (int j = 1; j <= n; j++)
     {
         if (largest < arr[j]){
-            
-        }
+
             largest = arr[j];
+        }
     }
     cout << "first largest element is: " << largest << endl;
     return 0;
