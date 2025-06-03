@@ -12,12 +12,13 @@ int main()
     }
     cout<<"Actual Values: ";
     for(int i = 0; i< size; i++){
-        cout<<nums[i];
+        cout<<nums[i]<<"\t";
     }
+    cout<<"\n";
 
     cout<<"Reversed values: ";
     for(int i = size -1 ; i>= 0; i--){
-        cout<<nums[i];
+        cout<<nums[i]<<"\t";
     }
     return 0;
 
