@@ -6,6 +6,10 @@ int main()
     int nums[size];
     cout<<"Enter size of the array: ";
     cin>>size;
-    
+    cout<<"taking input elements: ";
+    for(int i = 0; i< size; i++){
+        cin>>nums[i];
+    }
+
 
 }
