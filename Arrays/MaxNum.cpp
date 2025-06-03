@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int size;
+    int size, max;
     int nums[size];
     cout<<"Enter size of the array: ";
     cin>>size;
@@ -10,6 +10,10 @@ int main()
     for(int i = 0; i< size; i++){
         cin>>nums[i];
     }
+    for(int i = 0; i< size; i++){
+        if()
+    }
+
 
 
 }
