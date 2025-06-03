@@ -11,7 +11,15 @@ int main()
         cin>>nums[i];
     }
     cout<<"Actual Values: ";
+    for(int i = 0; i< size; i++){
+        cout<<nums[i];
+    }
+
     cout<<"Reversed values: ";
+    for(int i = size -1 ; i>= 0; i--){
+        cout<<nums[i];
+    }
+    return 0;
 
 
 }
