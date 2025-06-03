@@ -10,4 +10,14 @@ vector<int> twoSum(vector<int>& nums, int target){
 
 }
 int main(){
+    int size, target;
+    vector<int> arr[size];
+    cout<<"Enter size: "<<endl;
+    cin>>size;
+    cout<<"enter elements: "<<endl;
+    for(int i = 0; i < size; i++){
+        cin>>arr[i];
+    }
+    twoSum(arr[size], target);
+
 }
