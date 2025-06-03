@@ -10,9 +10,14 @@ int main()
     for(int i = 0; i< size; i++){
         cin>>nums[i];
     }
+    max = nums[0];
     for(int i = 0; i< size; i++){
-        if()
+        if( max < nums[i]){
+            max = nums[i];
+        }
     }
+    cout<<"Maximum number :" <<max;
+    return 0;
 
 
 
