@@ -20,7 +20,7 @@ int main()
         cin>>arr[i];
     }
     int result = sum(arr, n);
-    cout<<"Sum Of All Elements: "<<result;
+    cout<<"Sum Of All: "<<result;
     return 0;
     
 }
