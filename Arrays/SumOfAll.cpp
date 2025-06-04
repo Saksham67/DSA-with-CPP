@@ -1,27 +1,26 @@
 #include<bits/stdc++.h>     //sum of all it's elements
 using namespace std;
 int sum(int nums[], int size){
-    int add[size];
+    int total = 0;
     for(int i = 0; i< size; i++)
     {
-        add[i] =+ nums[i];
+        total += nums[i];
     }
-    cout<<"After Addition of it's elements: ";
-    for(int i = 0; i< size; i++){
-        cout<<add[i]<<" \t";
-    }
+    return total;
+    
 }
 int main()
 {
-    int n, max;
-    int arr[n];
+    int n;
     cout<<"Enter size of the array: ";
     cin>>n;
+    int arr[n];
     cout<<"taking input elements: ";
     for(int i = 0; i< n; i++){
         cin>>arr[i];
     }
-    sum(arr, n);
+    int result = sum(arr, n);
+    cout<<"Sum Of All Elements: "<<result;
     return 0;
     
 }
