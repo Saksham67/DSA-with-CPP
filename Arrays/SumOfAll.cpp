@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>     //sum of all it's elements
+#include<bits/stdc++.h>     //sum and average of all it's elements
 using namespace std;
 int sum(int nums[], int size){
     int total = 0;
@@ -8,6 +8,14 @@ int sum(int nums[], int size){
     }
     return total;
     
+}
+int average(int nums[], int size){
+    int average = 0;
+    for(int i = 0; i< totalNum; i++){
+        average += nums[i];
+
+    }
+    return average/ totalNum;
 }
 int main()
 {
@@ -20,7 +28,8 @@ int main()
         cin>>arr[i];
     }
     int result = sum(arr, n);
-    cout<<"Sum Of All: "<<result;
+    cout<<"Sum Of All: "<<result<<"\n";
+    cout<<"Average of All: "<<average(arr);
     return 0;
     
 }
