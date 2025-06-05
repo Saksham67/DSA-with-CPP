@@ -1,35 +1,36 @@
-#include<bits/stdc++.h>     //sum and average of all it's elements
+#include <bits/stdc++.h> //sum and average of all it's elements
 using namespace std;
-int sum(int nums[], int size){
+int sum(int nums[], int size)
+{
     int total = 0;
-    for(int i = 0; i< size; i++)
+    for (int i = 0; i < size; i++)
     {
         total += nums[i];
     }
     return total;
-    
 }
-int average(int nums[], int size){
+int average(int nums[], int size)
+{
     int average = 0;
-    for(int i = 0; i< totalNum; i++){
+    for (int i = 0; i < size; i++)
+    {
         average += nums[i];
-
     }
-    return average/ totalNum;
+    return average / size;
 }
 int main()
 {
     int n;
-    cout<<"Enter size of the array: ";
-    cin>>n;
+    cout << "Enter size of the array: ";
+    cin >> n;
     int arr[n];
-    cout<<"taking input elements: ";
-    for(int i = 0; i< n; i++){
-        cin>>arr[i];
+    cout << "taking input elements: ";
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
     }
     int result = sum(arr, n);
-    cout<<"Sum Of All: "<<result<<"\n";
-    cout<<"Average of All: "<<average(arr);
+    cout << "Sum Of All: " << result << "\n";
+    cout << "Average of All: " << average(arr, n);
     return 0;
-    
 }
