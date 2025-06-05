@@ -23,5 +23,5 @@ int main()
     }
     cout << "Enter a number to count: ";
     cin >> target;
-    cout << target << "appears " << CountFrequency << "times in the array";
+    cout << target << " appears " << CountFrequency(nums, size, target) << " times in the array";
 }
