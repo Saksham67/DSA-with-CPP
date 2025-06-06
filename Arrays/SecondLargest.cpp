@@ -1,7 +1,11 @@
-#include <bits/stdc++.h> //second largest element in any array
+#include <bits/stdc++.h>        //second largest element in any array
+#include<algorithm> 
 using namespace std;
 int SecondLargest(int nums[], int size)
 {   
+    sort(nums.begin(), nums.end());
+    return nums[size - 1];
+    
 
 }
 int main()
@@ -23,7 +27,7 @@ int main()
             max = arr[j];
         }
     }
-    cout << "first largest element is: " << max << endl;
+    cout <<"first largest element is: " << max << endl;
     cout<<"Second Largest Elements is: "<<SecondLargest(arr, n);
     return 0;
 }
