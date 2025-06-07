@@ -1,8 +1,5 @@
 #include<bits/stdc++.h>     /*You are given a string 'S'. Your task is to check whether the string is palindrome or not. For checking palindrome, consider alphabets and numbers only and ignore the symbols and whitespaces.
-
-Note :
-
-String 'S' is NOT case sensitive.*/
+                            Note : String 'S' is NOT case sensitive.*/
 using namespace std;
 bool isPalindrome(string s)
 {
