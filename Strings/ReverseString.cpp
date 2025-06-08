@@ -1,6 +1,7 @@
-#include<bits/stdc++.h> /* Write a function that reverses a string. The input string is given as an array of characters s.
+#include<bits/stdc++.h>     /* Write a function that reverses a string. The input string is given as an array of characters s.
                             You must do this by modifying the input array in-place with O(1) extra memory.*/
-#include<vector>   
+#include<vector>
+#include<string>   
 using namespace std;
 class Solution {
 public:
@@ -15,6 +16,20 @@ public:
     }
 };
 int main()
-{   
+{   Solution obj;
+    int n;
+    cout<<"enter size: ";
+    cin>>n;
+    vector<char> s(n);
+    for( int i = 0; i< n ; i++){
+        cin>>s[i];
+    }
+
+    obj.reverseString(s);
+    cout<<"Reversed string is: ";
+    for(char c: s){
+        cout<<c;
+    }
+    return 0;
 
 }
