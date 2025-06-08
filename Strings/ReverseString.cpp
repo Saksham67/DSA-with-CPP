@@ -17,19 +17,33 @@ public:
 };
 int main()
 {   Solution obj;
-    int n;
-    cout<<"enter size: ";
-    cin>>n;
-    vector<char> s(n);
-    for( int i = 0; i< n ; i++){
-        cin>>s[i];
-    }
+    //m-1
+    // int n;
+    // cout<<"enter size: ";
+    // cin>>n;
+    // vector<char> s(n);
+    // for( int i = 0; i< n ; i++){
+    //     cin>>s[i];
+    // }
 
+    // obj.reverseString(s);
+    // cout<<"Reversed string is: ";
+    // for(char c: s){
+    //     cout<<c;
+    // }
+    
+    //m-2
+    string str;
+    cout<<"Enter a string: ";
+    getline(cin, str);
+
+    vector<char> s(str.begin(), str.end());
     obj.reverseString(s);
     cout<<"Reversed string is: ";
     for(char c: s){
         cout<<c;
     }
+
     return 0;
 
 }
