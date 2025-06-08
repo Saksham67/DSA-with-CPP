@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>     //Linear Search
 using namespace std;
-int FindElement(int num)
+void FindElement(int num)
 {
     int size;
     cout<<"Enter Length of array: "<<endl;
@@ -10,13 +10,21 @@ int FindElement(int num)
     for(int i=0; i<size; i++){
         cin>>arr[i];
     }
+    bool found = false;
+
+
     for(int i = 0; i<size; i++)
     {
         if(num == arr[i])
         {
             cout<<"Element Found at index: "<<i;
+            found = true;
             break;
         }
+    
+    }
+    if(!found) {
+        cout<<"Element not found in the array."<<endl;
     }
     
 
