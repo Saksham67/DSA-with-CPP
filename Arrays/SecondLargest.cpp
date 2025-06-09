@@ -29,6 +29,9 @@ int main()
             max1 = arr[i];
             max2 = max1;
         }
+        else if (arr[i] > max2){
+            max2 = arr[i];
+        }
     }
     cout <<"Second largest element is: " <<max2 << endl;
     
