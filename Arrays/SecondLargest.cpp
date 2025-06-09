@@ -13,16 +13,24 @@ int main()
     {
         cin >> arr[i];
     }
-    int max1 = arr[0], max2= arr[1];
-    int max = arr[0];
-    for (int j = 1; j <= n; j++)
+    int max1 , max2;
+    if(arr[0] > arr[1] ){
+        max1 = arr[0];
+        max2 = arr[1];
+    }
+    else{
+        max2 = arr[0];
+        max1 = arr[1];
+    }
+    for (int i = 2; i <= n; i++)
     {
-        if (max < arr[j]){
+        if (max1 < arr[i]){
 
-            max = arr[j];
+            max1 = arr[i];
+            max2 = max1;
         }
     }
-    cout <<"first largest element is: " << max << endl;
+    cout <<"Second largest element is: " <<max2 << endl;
     
     return 0;
 }
