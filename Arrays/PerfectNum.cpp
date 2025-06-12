@@ -14,5 +14,9 @@ bool checkPerfectNumber(int num) {
 }
 int main()
 {
-    
+    int num;
+    cout<<"Enter a number: ";
+    cin>>num;
+    checkPerfectNumber(num);
+    return 0;
 }
