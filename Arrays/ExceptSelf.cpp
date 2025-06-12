@@ -10,9 +10,10 @@ vector<int> productExceptSelf(vector<int> & nums){
             }
         }
     }
+    return result;
 }
 
 int main()
-{
+{   
 
 }
