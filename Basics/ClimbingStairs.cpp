@@ -19,7 +19,7 @@ int main(){
     cin>>num;
     steps = climbStairs(num);
     cout<<"Total Steps: "<<steps;
-    return 0
+    return 0;
 
 
 
