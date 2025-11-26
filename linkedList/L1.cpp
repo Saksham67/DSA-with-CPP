@@ -9,6 +9,15 @@ public:
 };
 int main()
 {
+    //statically assigning values
+
+    // Node Head;
+    // Head.data = 6;
+    // Head.next = nullptr;
+    // cout<<Head.data<<"\t"<<Head.next;
+
+    // Dynamically assigning values;
+
     Node * Head;
     Head = new Node();
     Head-> data = 5;
