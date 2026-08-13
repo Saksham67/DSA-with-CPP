@@ -10,14 +10,17 @@ int main()
     cout << "maxSubarray sum of size " << window_size << " is: " << result;
     return 0;
 }
-int maxSubarray(vector<int>& arr, int k){
+int maxSubarray(vector<int> &arr, int k)
+{
     int n = arr.size();
     int window_sum = 0;
     int maxi = INT_MIN;
-    for(int i = 0; i< k; i++){
+    for (int i = 0; i < k; i++)
+    {
         window_sum += arr[i];
     }
-    for(int i = k; i< n; i++){
+    for (int i = k; i < n; i++)
+    {
         window_sum += arr[i] - arr[i - k];
         maxi = max(window_sum, maxi);
     }
