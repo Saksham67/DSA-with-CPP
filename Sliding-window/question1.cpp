@@ -14,11 +14,12 @@ int maxSubarray(vector<int> &arr, int k)
 {
     int n = arr.size();
     int window_sum = 0;
-    int maxi = INT_MIN;
+    // int maxi = INT_MIN;
     for (int i = 0; i < k; i++)
     {
         window_sum += arr[i];
     }
+    int maxi = window_sum;
     for (int i = k; i < n; i++)
     {
         window_sum += arr[i] - arr[i - k];
