@@ -6,9 +6,15 @@ int main(){
     int n = arr.size();
     vector<int> suffixMax(n);
     int maxi = INT_MIN;
-    for(int i = n-1; i>= 0; i--){
+    for(int i = n-2; i>= 0; i--){
         maxi = max(maxi,arr[i]);
         suffixMax[i] = maxi;
     }
-    
+    int maxDiff = INT_MIN;
+    for(int i = 0; i< n - 1; i++){
+        maxDiff = max(suffixMax[i] - arr[i], maxDiff);
+    }
+    cout<<"max difference :"<<maxDiff;
+    return 0;
+
 }
